@@ -12,6 +12,14 @@ int cube(int i) {
      return i * i * i;
 }
 
+float inverse(int i) {
+     if (i == 0) {
+          printf("Error: Division by zero\n");
+	  return 0;
+     }
+     return 1.0/i;
+}
+
 int subtract(int i, int j) {
     return (i - j);
 }
@@ -81,7 +89,7 @@ int main() {
             case 'i':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("The result of inverse of %d is %.2f\n", a, inverse(a));
                 break;
             default:
                 printf("Invalid operation. Please try again.\n");
