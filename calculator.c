@@ -4,6 +4,14 @@ int add(int i, int j) {
     return (i + j);
 }
 
+int square(int i) {
+    return i * i;
+}
+
+int cube(int i) {
+     return i * i * i;
+}
+
 int subtract(int i, int j) {
     return (i - j);
 }
@@ -34,7 +42,6 @@ int main() {
         printf("^: Square of a number\n");
         printf("#: Cube of a number\n");
         printf("i: Inverse of a number\n");
-        
         printf("Enter operation: ");
         scanf(" %c", &operation);
 
@@ -64,12 +71,12 @@ int main() {
             case '^':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("The result of sqaure of %d is %d\n", a, square(a));
                 break;
             case '#':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("The result of cube of %d is %d\n", a, cube(a));
                 break;
             case 'i':
                 printf("Enter an integer: ");
